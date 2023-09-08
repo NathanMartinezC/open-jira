@@ -8,26 +8,7 @@ export interface EntriesState {
 }
 
 const Entries_INITIAL_STATE: EntriesState = {
-    entries: [
-        {
-            _id: uuidv4(),
-            description: 'todo 1',
-            status: 'pending',
-            createdAt: Date.now(),
-        },
-        {
-            _id: uuidv4(),
-            description: 'todo 2',
-            status: 'in-progress',
-            createdAt: Date.now(),
-        },
-        {
-            _id: uuidv4(),
-            description: 'todo 3',
-            status: 'finished',
-            createdAt: Date.now(),
-        }
-    ],
+    entries: [],
 }
 
 export const EntriesProvider:FC<PropsWithChildren> = ({ children }) => {
